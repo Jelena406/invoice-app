@@ -1,0 +1,23 @@
+.task-modal-body h4 {
+  color: #ea5555;
+  font-size: 20px;
+}
+
+.buttons-holder {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons-holder button {
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.buttons-holder button:first-of-type {
+  background-color: #ea5555;
+  color: #ffff;
+}
+
+.buttons-holder button:last-of-type {
+  color: #635fc7;
+}

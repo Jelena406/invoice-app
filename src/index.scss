@@ -1,0 +1,36 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import url('./styles/TaskModal.scss');
+@import url('./styles/NewTaskDashboard.scss');
+@import url('./styles/EditTaskDashboard.scss');
+@import url('./styles/NewDashboard.scss');
+@import url('./styles/DeleteModal.scss');
+@import url('styles/Sidebar.scss');
+@import url('styles/Header.scss');
+@import url('./styles/Boards.scss');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7fd;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+}
+.rigth {
+  background: var(--light-grey-light-bg, #f4f7fd);
+  &[data-full-width='true'] {
+    grid-column: 1/-1;
+  }
+}
+:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

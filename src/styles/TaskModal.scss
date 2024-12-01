@@ -1,0 +1,110 @@
+p {
+  color: #828fa3;
+}
+
+p:nth-child(3) {
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+select {
+  width: 100%;
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+.task-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  inset: 0;
+  position: fixed;
+  background-color: #00000088;
+}
+
+.task-modal-body {
+  width: 30%;
+  background-color: #ffff;
+  padding: 32px;
+  border-radius: 6px;
+}
+
+.title-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  width: 80%;
+  margin-bottom: 24px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown button {
+  background-color: transparent;
+}
+
+.menu {
+  position: absolute;
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+  width: 175px;
+  border-radius: 8px;
+  left: -45px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.menu > li {
+  margin: 0;
+  background-color: white;
+}
+
+.menu > li > button {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  background: none;
+  color: inherit;
+  border: none;
+  padding-left: 15px;
+}
+
+.menu > li:first-of-type > button {
+  color: #828fa3;
+}
+.menu > li:last-of-type > button {
+  color: #ea5555;
+}
+
+.input-field {
+  background-color: #f4f7fd;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  border-radius: 4px;
+}
+
+.input-field + p {
+  margin-top: 18px;
+  font-weight: 700;
+}
+
+.input-field label {
+  margin-left: 16px;
+  color: #000112;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+input[type='checkbox']:checked + label {
+  text-decoration: line-through;
+}
